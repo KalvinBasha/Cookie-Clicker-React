@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.header {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.store {
+  margin-top: 20px;
+}
+
+.store h2 {
+  font-size: 1.5rem;
+}
+
+.store button {
+  background-color: #008cba;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.store button:hover {
+  background-color: #005a85;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.cookie {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.cookie:hover {
+  transform: scale(1.1);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.cookie.clicked {
+  animation: pulse 0.3s ease-in-out;
+}
